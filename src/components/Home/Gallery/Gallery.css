@@ -1,7 +1,4 @@
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
     padding-left: 2%;
     padding-right: 2%;
   }
@@ -13,20 +10,20 @@
   .gallery-image-container img {
     display: block; 
     width: 100%;
-    
   }
  
   .gallery-image-container:hover .gallery-overlay {
     opacity: 1;
   }
-  @media (max-width: 1074px) {
-    .gallery {
-      grid-template-columns: repeat(2, 1fr);
-    }
+
+  /* Custom styles for slick arrows */
+  .slick-prev, .slick-next {
+    width: 30px;
+    height: 30px;
+    z-index: 1;
   }
   
-  @media (max-width: 767px) {
-    .gallery {
-      grid-template-columns: repeat(1, 1fr);
-    }
+  .slick-prev:before, .slick-next:before {
+    font-size: 30px;
+    color: black;
   }

@@ -2,6 +2,13 @@
   padding-left: 5%;
   padding-right: 5%;
 }
+.blog-header-container{
+  background-image: url('../../assets/blog-image1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+}
 .blog-card-item{
   margin-bottom: 4rem;
 }

@@ -15,7 +15,7 @@ const LandingSection = () => {
       <div className="hero_section">
         <div className="container">
           <div className="hero_section_content ">
-            <div className="animated fadeInLeft header-content">
+            {/* <div className="animated fadeInLeft header-content">
               <h2 className="text-center">
                 Assisted Living for Autistic Adults
               </h2>
@@ -26,7 +26,7 @@ const LandingSection = () => {
                   Discover More
                 </Link>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

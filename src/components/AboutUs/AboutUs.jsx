@@ -8,6 +8,8 @@ import Testimonial from "../common/Testimonial/Testimonial";
 import TeamMember from "../common/TeamMember";
 import DiscoverMore from "../common/DiscoverMore";
 import about1 from "../../assets/g6.jpg";
+import AboutTimeline from "./AboutTimeline";
+import { FaArrowRight } from "react-icons/fa";
 const AboutUs = ({ subHead, mainHead }) => {
   const members = [
     {
@@ -76,6 +78,7 @@ const AboutUs = ({ subHead, mainHead }) => {
                   and promotes awareness of autism in society.
                 </p>
               </div>
+              
             </div>
           </div>
         </div>
@@ -129,6 +132,18 @@ const AboutUs = ({ subHead, mainHead }) => {
           </div>
         </div>
       </div>
+      <div className="container my-5 alfaa-desire">
+        <h4 className="as_title mb-5 text-white">ALFAA with the desire to give</h4>
+        <ul className="text-white">
+          <li><FaArrowRight style={{ marginRight: '8px' }}/> Respite to Mothers of ASD teenagers</li>
+          <li><FaArrowRight style={{ marginRight: '8px' }}/> To help TEENAGERS  with ASD to have their own environment without parential intervention</li>
+          <li><FaArrowRight style={{ marginRight: '8px' }}/> To find a workable BEHAVIOUR MANAGEMENT program for ASD teenagers</li>
+          <li><FaArrowRight style={{ marginRight: '8px' }}/> To create a Life care and Future HOME for ASD individuals (Adults only )</li>
+          <li><FaArrowRight style={{ marginRight: '8px' }}/> To give HOPE to parents with ASD Children</li>
+          <li><FaArrowRight style={{ marginRight: '8px' }}/> Founder Trustee came together to set up ALFAA (ASSISTED LIVING FOR AUTISTIC ADULTS ) in November 2009</li>
+        </ul>
+      </div>
+      <AboutTimeline/>
       <BrandSlider />
       <StartDonate />
       <Testimonial />

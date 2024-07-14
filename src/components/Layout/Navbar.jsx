@@ -56,7 +56,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item dropdown">
-                <Link className="nav-link" to="/donations" onClick={handleClose}>
+                <Link className="nav-link"  onClick={handleClose}>
                   Donations
                 </Link>
                 <div className="dropdown-menu">
@@ -69,7 +69,7 @@ const Navbar = () => {
                 </div>
               </li>
               <li className="nav-item dropdown">
-                <Link className="nav-link" to="/blogs" onClick={handleClose}>
+                <Link className="nav-link"  onClick={handleClose}>
                   Blogs
                 </Link>
                 <div className="dropdown-menu">
@@ -82,7 +82,7 @@ const Navbar = () => {
                 </div>
               </li>
               <li className="nav-item dropdown">
-                <Link className="nav-link" to="/events" onClick={handleClose}>
+                <Link className="nav-link"  onClick={handleClose}>
                   Events
                 </Link>
                 <div className="dropdown-menu">
