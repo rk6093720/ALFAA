@@ -12,7 +12,7 @@ import { PiQuotesBold } from "react-icons/pi";
 import { GoArrowRight } from "react-icons/go";
 import { CiSearch } from "react-icons/ci";
 import "./Blog.css";
-const BlogDetails = () => {
+const BlogDetails = ({date,image,header,description1,description2}) => {
   
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -27,35 +27,20 @@ const BlogDetails = () => {
             <div className="col-xl-8 col-lg-8">
               <div className="evet-details-left-box">
                 <div className="ed-thumb position-relative ">
-                  <img src={event1} alt="" className="img-fluid" />
+                  <img src={image} alt="" className="img-fluid" />
                   <div className="ed-thumb-text d-none d-md-block">
-                    <span>08 April</span>
+                    <span>{date}</span>
                   </div>
                 </div>
                 <h4 className="ed-title">
-                  Your Help Make Someone’s life Easier
+                  {header}
                 </h4>
                 <div className="ed-text">
                   <p>
-                    Curabitur luctus euismod metus, eu pellentesque mauris
-                    tempus sit amet. Proin ante odio, posuereid lacus auctor,
-                    elementum tempor tellus. Integer mattis justo eu enim tempus
-                    lacinia. Fusce vitaeenim diam. Ut commodo viverra magna non
-                    egestas. Integer sodales massa at odio tristique
-                    volutpat.Proin posuere odio maximus, eleifend felis sed,
-                    ultrices turpis. Proin ultricies sodales nisl vel euismod.
-                    Praesent vestibulum sem lorem, eget fermentum justo iaculis
-                    et.
+                    {description1}
                   </p>
                   <p>
-                    vitae lobortis eros purus non augue. Nullam molestie augue
-                    diam, scelerisque porta dolor mollis a.Cras condimentum
-                    elementum eros at finibus. pharetra condimentum sagittis.
-                    Donec consequatvelit et nisi scelerisque, quis iaculis felis
-                    tincidunt. In faucibus sapien ut elit hendrerit, et
-                    tristiquemauris lacinia. Phasellus tincidunt scelerisque
-                    lectus sed scelerisque. Donec at enim facilisis,tempus nisi
-                    quis, pharetra enim
+                    {description2}
                   </p>
                 </div>
                 <div className="bd-quotes-container col-xl-11">

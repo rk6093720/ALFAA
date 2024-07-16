@@ -47,7 +47,7 @@ const Blog = () => {
       id: 4,
       image:blog12,
       tag: "FOOD",
-      title: "99th NT Board Members Meetin",
+      title: "99th NT Board Members Meeting",
       date: "JUNE 29, 2024",
     },
     {
@@ -88,7 +88,9 @@ const Blog = () => {
     },
     
   ];
-
+  const formatTitleToUrl = (title) => {
+    return title.toLowerCase().replace(/ /g, '-');
+  };
   const [selectedBlogIndex, setSelectedBlogIndex] = useState(null);
 
   const handleOpen = (index) => {
@@ -244,7 +246,7 @@ const Blog = () => {
                     <div>
                       <span className="blog-meta">{blog.date}</span>
                     </div>
-                    <Link to="/blogdetails">
+                    <Link to={`/${formatTitleToUrl(blog.title)}`}>
                       <div className="read-more-link">
                         <span>
                           Read More <FaLongArrowAltRight />
@@ -275,6 +277,7 @@ const Blog = () => {
                 src={blogs[selectedBlogIndex].image}
                 alt=""
                 className="image-viewer-image"
+
               />
               <button
                 className="image-viewer-arrow image-viewer-arrow-right"
