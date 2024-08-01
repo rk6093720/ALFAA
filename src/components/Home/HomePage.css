@@ -1,0 +1,11 @@
+/* HomePage.css */
+.homepage-container {
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+section {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px; /* Adjust as per your layout needs */
+}

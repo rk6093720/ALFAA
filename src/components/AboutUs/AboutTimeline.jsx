@@ -26,7 +26,7 @@ export default function AboutTimeline() {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent sx={{ color: "#000000", fontFamily:'"Manrope", sans-serif'  }}>
-            Awareness Workshops N Parent Empowerment Programs
+          Awareness Workshops and Parent Empowerment Programs
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -56,7 +56,7 @@ export default function AboutTimeline() {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent sx={{ color: "#000000", fontFamily:'"Manrope", sans-serif'  }}>
-            OPTIMA Day care N Respite Care Full Day Program
+            OPTIMA Day care and  Respite Care Full Day Program
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>

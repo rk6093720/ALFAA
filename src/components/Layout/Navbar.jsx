@@ -42,66 +42,52 @@ const Navbar = () => {
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
                 <Link className="nav-link" to="/home" onClick={handleClose}>
-                  Home
+                  <b>Home</b>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/aboutus" onClick={handleClose}>
-                  About Us
+                  <b>About Us</b>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/team" onClick={handleClose}>
-                  Team
+                  <b>Team</b>
                 </Link>
               </li>
               <li className="nav-item dropdown">
-                <Link className="nav-link"  onClick={handleClose}>
-                  Donations
+                <Link className="nav-link" to="/donatenow"  onClick={handleClose}>
+                  <b>Donations</b>
                 </Link>
-                <div className="dropdown-menu">
-                  <Link className="dropdown-item" to="/donations" onClick={handleClose}>
-                    Donations
-                  </Link>
-                  <Link className="dropdown-item" to="/donationdetails" onClick={handleClose}>
-                    Donation Details
-                  </Link>
-                </div>
+                
               </li>
               <li className="nav-item dropdown">
-                <Link className="nav-link"  onClick={handleClose}>
-                  Blogs
+                <Link className="nav-link"   to="/blogs" onClick={handleClose} >
+                  <b>Blogs</b>
                 </Link>
-                <div className="dropdown-menu">
-                  <Link className="dropdown-item" to="/blogs" onClick={handleClose}>
-                    Blogs
-                  </Link>
-                  <Link className="dropdown-item" to="/blogdetails" onClick={handleClose}>
-                    Blog Details
-                  </Link>
-                </div>
+             
               </li>
               <li className="nav-item dropdown">
-                <Link className="nav-link"  onClick={handleClose}>
-                  Events
+                <Link className="nav-link"   to="/events" onClick={handleClose}>
+                 <b> Events</b>
                 </Link>
-                <div className="dropdown-menu">
-                  <Link className="dropdown-item" to="/events" onClick={handleClose}>
+                
+                  {/* <Link className="dropdown-item" to="/events" onClick={handleClose}>
                     Events
-                  </Link>
-                  <Link className="dropdown-item" to="/eventdetails" onClick={handleClose}>
+                  </Link> */}
+                  {/* <Link className="dropdown-item" to="/eventdetails" onClick={handleClose}>
                     Event Details
-                  </Link>
-                </div>
+                  </Link> */}
+                
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/contactus" onClick={handleClose}>
-                  Contact Us
+                  <b>Contact Us</b>
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/trusty" onClick={handleClose}>
-                  Trusty
+                <Link className="nav-link" to="/Trustees" onClick={handleClose}>
+                <b>Trustees</b>
                 </Link>
               </li>
             </ul>
@@ -123,7 +109,7 @@ const Navbar = () => {
                   <span>Call Us Anytime</span>
                 </div>
                 <div>
-                  <span>+91 9876543210</span>
+                  <span>+91 9741418103</span>
                 </div>
               </div>
             </div>

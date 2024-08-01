@@ -27,7 +27,7 @@ const ProvidingUrgent = () => {
               <div className="providing-item-box">
                 <div className="providing-content d-flex flex-column gap-3">
                   <h4 className="as_title">
-                  What is autism?
+                  What is Autism?
                   </h4>
                   <p className="as_text">
                     Autism is one of five pervasive neurological developmental

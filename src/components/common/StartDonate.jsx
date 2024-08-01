@@ -16,8 +16,8 @@ const StartDonate = () => {
         <span>LET'S START SOMETHING FOR THEM</span>
         <h4 className="text-white animated tpfadeUp">No One Has Ever Become Poor From Giving</h4>
         <div className="btn donate-btn animated tpfadeUp">
-          <Link className="text-decoration" to="/donate">
-            Start Donate Now
+          <Link className="text-decoration" to="/donatenow">
+            Donate Now
           </Link>
         </div>
       </div>

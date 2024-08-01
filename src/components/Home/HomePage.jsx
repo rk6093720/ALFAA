@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import "./HomePage.css";
 import LandingSection from "./LandingSection/LandingSection";
 import AboutPoorex from "./AboutPoorex/AboutPoorex";
 import HelpThePeople from "./HelpThePeople/HelpThePeople";
@@ -11,25 +12,28 @@ import DiscoverMore from "../common/DiscoverMore";
 import ProvidingUrgent from "./ProvidingUrgent/ProvidingUrgent";
 import OurFacility from "./OurFacility/OurFacility";
 import WhatisAlfaa from "./WhatisAlfaaa/WhatisAlfaa";
-const HomePage=()=>{
+
+const HomePage = () => {
     useEffect(() => {
-        window.scrollTo(0, 0)
-      }, [])
-    return(
-        <div>
-            <LandingSection/>
-            <AboutPoorex/>
-            {/* <HelpThePeople/> */}
-            <Gallery/>
-            <OurFacility/>
-            <Testimonial/>
-            <EventSection/>
-            <StartDonate/>
-            <WhatisAlfaa/>
-            <ProvidingUrgent/>
-            <OurBlog/>
-            <DiscoverMore/>
+        window.scrollTo(0, 0);
+    }, []);
+
+    return (
+        <div className="homepage-container">
+            <LandingSection />
+            <AboutPoorex />
+            {/* <HelpThePeople /> */}
+            <Gallery />
+            <OurFacility />
+            <Testimonial />
+            <EventSection />
+            <StartDonate />
+            <WhatisAlfaa />
+            <ProvidingUrgent />
+            {/* <OurBlog /> */}
+            <DiscoverMore />
         </div>
-    )
-}
+    );
+};
+
 export default HomePage;

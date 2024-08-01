@@ -8,31 +8,37 @@ import Testimonial from "../common/Testimonial/Testimonial";
 import TeamMember from "../common/TeamMember";
 import DiscoverMore from "../common/DiscoverMore";
 import about1 from "../../assets/g6.jpg";
+import about2 from "../../assets/ab2.jpeg"
+import e1 from "../../assets/1e.jpg"
+import e2 from "../../assets/2e.jpg"
+import e3 from "../../assets/3e.jpg"
+
 import AboutTimeline from "./AboutTimeline";
 import { FaArrowRight } from "react-icons/fa";
+import { Grid } from "@mui/material";
 const AboutUs = ({ subHead, mainHead }) => {
   const members = [
     {
-      src: "https://html.hixstudio.net/poorex-prev/assets/img/team/team-1-1.jpg",
-      name: "Kaira",
-      role: "Volunteer",
+      src: e1,
+      name: "Mrs. Tejo Prasanna",
+      role: "Academic Director",
     },
     {
-      src: "https://html.hixstudio.net/poorex-prev/assets/img/team/team-1-1.jpg",
-      name: "John",
-      role: "Volunteer",
+      src: e2,
+      name: "Mr. Kashmir Singh",
+      role: "Principal and Sr Special Educator",
     },
     {
-      src: "https://html.hixstudio.net/poorex-prev/assets/img/team/team-1-1.jpg",
-      name: "Doe",
-      role: "Volunteer",
+      src: e3,
+      name: "Mr. Devinder Singh",
+      role: "Senior Special Educator ( Supervisor-Residential Project)",
     },
   ];
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <>
+    <div className="homepage-container">
       <HeroSection subHead="Home / About Us" mainHead="About Us" />
       <div className="our-poorex-container-area">
         <div className="our-poorex-container container">
@@ -78,72 +84,71 @@ const AboutUs = ({ subHead, mainHead }) => {
                   and promotes awareness of autism in society.
                 </p>
               </div>
-              
             </div>
           </div>
         </div>
         <div className="our-poorex-container2 container mt-4">
-          
           <div className="right-side animated fadeInRight col-xl-6 col-md-5 col-sm-4">
-            
             <div className="about_section_title">
-              
-              
-              <h4 className="as_title">
-                The Plan
-              </h4>
+              <h4 className="as_title">The Plan</h4>
               <div className="as_text">
                 <p>
-                  The proposed residential campus would be developed on 2.31
-                  acres of land in the natural surrounding of north Bangalore
-                  (Dodballabpur, Rural BANGALORE). The neighboring villages
-                  would serve as pool of employable for the people of the near
-                  by villages.
+                Founded in 2009, Assisted Living For Autistic Adults ALFAA is dedicated to enhancing the living conditions of autistic adults in India. Over the next three years, ALFAA plans to consolidate its mission.
                 </p>
               </div>
               <div className="as_text">
                 <p>
-                  The campus would includes residential wings as living comforts
-                  for the hostlers. Apart from this, special care would be taken
-                  to have ample amount of lung space and walkways, play area and
-                  small tree grooves. The campus would have 24hrs security and
-                  regular health care service would also be provided. The ALFAA
-                  Campus would cater exclusively for adults with Autism spectrum
-                  disorder (ASD) and provide opportunity for self expression and
-                  growth. In the third and later phase we intend to take 3 Acres
-                  more to allow parents to make condos for their old age and
-                  live on the same campus with their children and grow old
-                  watching them happy.
+                By focusing on exclusive residential facilities for autistic adults, ALFAA aims to establish itself as a haven for those in need of care due to ageing parents or guardians. The organization also intends to expand its counselling services for individuals with autism spectrum disorder and their families. 
                 </p>
               </div>
               <div className="as_text">
                 <p>
-                  11 parents have helped us to purchase the land , another 11
-                  parents we are taking to help construct. To join this awesome
-                  Family do call us.
+                By actively advocating for autism awareness, ALFAA will enhance its role as a prominent voice for the community. Furthermore, the proposed residential campus, situated near Bangalore, will not only provide a secure and enriching environment but also generate job opportunities for nearby villages.
                 </p>
               </div>
             </div>
           </div>
           <div className="left-side animated tpfadeLeft col-xl-4 col-md-5">
             <div className="main-img position-relative">
-              <img src={about1} alt="" className="abouimg1" />
+              <img src={about2} alt="" className="abouimg1" />
             </div>
           </div>
         </div>
       </div>
       <div className="container my-5 alfaa-desire">
-        <h4 className="as_title mb-5 text-white">ALFAA with the desire to give</h4>
+        <h4 className="as_title mb-5 text-white">
+        ALFAA is driven with the desire to give
+        </h4>
         <ul className="text-white">
-          <li><FaArrowRight style={{ marginRight: '8px' }}/> Respite to Mothers of ASD teenagers</li>
-          <li><FaArrowRight style={{ marginRight: '8px' }}/> To help TEENAGERS  with ASD to have their own environment without parential intervention</li>
-          <li><FaArrowRight style={{ marginRight: '8px' }}/> To find a workable BEHAVIOUR MANAGEMENT program for ASD teenagers</li>
-          <li><FaArrowRight style={{ marginRight: '8px' }}/> To create a Life care and Future HOME for ASD individuals (Adults only )</li>
-          <li><FaArrowRight style={{ marginRight: '8px' }}/> To give HOPE to parents with ASD Children</li>
-          <li><FaArrowRight style={{ marginRight: '8px' }}/> Founder Trustee came together to set up ALFAA (ASSISTED LIVING FOR AUTISTIC ADULTS ) in November 2009</li>
+          <li>
+            <FaArrowRight style={{ marginRight: "8px" }} /> Respite to Mothers
+            of ASD teenagers
+          </li>
+          <li>
+            <FaArrowRight style={{ marginRight: "8px" }} /> To help TEENAGERS
+            with ASD to have their own environment without parential
+            intervention
+          </li>
+          <li>
+            <FaArrowRight style={{ marginRight: "8px" }} /> To find a workable
+            BEHAVIOUR MANAGEMENT program for ASD teenagers
+          </li>
+          <li>
+            <FaArrowRight style={{ marginRight: "8px" }} /> To create a Life
+            care and Future HOME for ASD individuals (Adults only )
+          </li>
+          <li>
+            <FaArrowRight style={{ marginRight: "8px" }} /> To give HOPE to
+            parents with ASD Children
+          </li>
+          <li>
+            <FaArrowRight style={{ marginRight: "8px" }} /> Founder Trustee came
+            together to set up ALFAA (ASSISTED LIVING FOR AUTISTIC ADULTS ) in
+            November 2009
+          </li>
         </ul>
       </div>
-      <AboutTimeline/>
+      <AboutTimeline />
       <BrandSlider />
       <StartDonate />
       <Testimonial />
@@ -156,8 +161,8 @@ const AboutUs = ({ subHead, mainHead }) => {
           <TeamMember members={members} />
         </div>
       </div>
-      <DiscoverMore />
-    </>
+     
+    </div>
   );
 };
 

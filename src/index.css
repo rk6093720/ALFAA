@@ -15,6 +15,10 @@
   --tp-border-1: #385656;
   --tp-border-2: #edefef;
 }
+p{
+  text-align: justify;
+  font-size: 16px;
+}
 * {
   padding: 0;
   margin: 0;

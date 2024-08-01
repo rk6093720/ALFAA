@@ -1,33 +1,35 @@
 import React from 'react';
 import EventCard from '../common/EventCards/EventCards';
-import img1 from '../../assets/e1.jpg'
-import img2 from '../../assets/e2.jpg'
-import img3 from '../../assets/e3.jpg'
+import img1 from '../../assets/img1.jpg'
+import img2 from '../../assets/img2.jpg'
+import img3 from '../../assets/img3.png'
 const eventCards = [
+  {
+    imgSrc:img3,
+
+    header: "Kargil Vijay Diwas ",
+    link: "#",
+    date: "20",
+    month: "July",
+  },
     {
+      
         imgSrc:img1,
   
-        header: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        header: "Vijay Divash",
         link: "#",
-        date: "17",
-        month: "Jan",
+        date: "26",
+        month: "July",
       },
       {
         imgSrc:img2,
   
-        header: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+        header: "Independence Day",
         link: "#",
-        date: "25",
-        month: "Feb",
+        date: "15",
+        month: "Aug",
       },
-      {
-        imgSrc:img3,
-  
-        header: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-        link: "#",
-        date: "07",
-        month: "Mar",
-      },
+     
 ];
 
 const EventSection = () => {

@@ -5,9 +5,9 @@ import emailjs from 'emailjs-com';
 import { useRef, useState } from 'react';
 
 const contactDetails = [
-  { icon: PhoneIcon, lines: ["+91 656 768 6789", "+00 (8898) 768"], hrefPrefix: "tel:" },
-  { icon: EmailIcon, lines: ["poorexcharityhelp@gmail.com", "infocompany@gmail.com"], hrefPrefix: "mailto:" },
-  { icon: LocationIcon, lines: ["55 Hereford catdal street line", "New York, USA"], hrefPrefix: "" }
+  { icon: PhoneIcon, lines: ["+91 9741418103", "+91 8892769007"], hrefPrefix: "tel:" },
+  { icon: EmailIcon, lines: ["alfaa2010@gmail.com", "rubysingh_india@yahoo.co.in"], hrefPrefix: "mailto:" },
+  { icon: LocationIcon, lines: ["3B, CASSIA COURT 91/1", "COLES ROAD, BANGALORE"], hrefPrefix: "" }
 ];
 
 // Define ContactForm component
@@ -72,10 +72,10 @@ const ContactForm = () => {
     e.preventDefault();
 
     if (validateForm()) {
-      emailjs.sendForm('service_1ppgdjd', 'template_mbhe9yh', e.target, 'KjlarvHvcRLNvtTan')
+      emailjs.sendForm('service_ibpy7ve', 'template_w2na4rj', e.target, 'mIu77IZvu1ZMpfJ7X')
         .then((result) => {
           alert('Message Sent Successfully');
-          form.current.reset(); // Reset form after successful submission
+          form.current.reset(); 
         })
         .catch((error) => {
           console.error('Error sending message:', error);
@@ -92,7 +92,7 @@ const ContactForm = () => {
         <Grid item xs={12} md={6}>
           <Box sx={{ padding: 2 }}>
             <Typography variant="h6" gutterBottom sx={{ color: '#FE7F4C', fontWeight: 700 }}>
-              CONTACT WITH POOREX
+              CONTACT WITH ALFAA
             </Typography>
             <Typography variant="h4" gutterBottom sx={{ fontSize: { xs: '2rem', md: '2.5rem' }, fontWeight: 700, lineHeight: 1.2 }}>
               Just have a quick <br /> any question?
@@ -211,7 +211,9 @@ const ContactForm = () => {
 
         <Grid item xs={12} sx={{ marginTop: { xs: '1rem', md: '-1rem' }, textAlign: 'center' }}>
           <Box sx={{ overflow: 'hidden', height: { xs: '300px', md: '400px' }, position: 'relative' }}>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.847978266845!2d-73.9893847845939!3d40.73082357932927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259af8f9b1b79%3A0x8fdc93e8e12bd18d!2s55%20Washington%20Square%20S%2C%20New%20York%2C%20NY%2010012%2C%20USA!5e0!3m2!1sen!2sin!4v1622648342222!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy='no-referrer-when-downgrade' title="Poorex Location"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31100.904245686746!2d77.5724740743164!3d12.996584499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16f67de17f21%3A0xbdb33d28abb75db9!2sAssisted%20Living%20For%20Autistic%20Adults!5e0!3m2!1sen!2sin!4v1722150550598!5m2!1sen!2sin"
+            
+            width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy='no-referrer-when-downgrade' title="Poorex Location"></iframe>
           </Box>
         </Grid>
       </Grid>

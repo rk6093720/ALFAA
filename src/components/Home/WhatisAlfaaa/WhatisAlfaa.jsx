@@ -9,7 +9,7 @@ const WhatisAlfaa = () => {
   return (
     <>
       <div className="whatis-alfaa-container container my-5">
-        <h2 className=" mb-4">What is ALFAA?</h2>
+        <h2 className=" mb-4"><b>What is ALFAA</b>?</h2>
         <p className="as_text">
           Assisted Living For Autistic Adults (ALFAA) was founded in 2009 by a
           mother hounded by these worrying questions and sad state of facilities
@@ -24,7 +24,7 @@ const WhatisAlfaa = () => {
                 <BiDonateHeart />
               </div>
               <div className="d-flex flex-column ">
-                <h5 className="wa-count">40</h5>
+                <h5 className="wa-count">85+</h5>
                 <p>Kids Helped</p>
               </div>
             </div>
@@ -46,7 +46,7 @@ const WhatisAlfaa = () => {
                 <SlCalender />
               </div>
               <div className="d-flex flex-column ">
-                <h5 className="wa-count">2011</h5>
+                <h5 className="wa-count">2009</h5>
                 <p>Since</p>
               </div>
             </div>
@@ -57,7 +57,7 @@ const WhatisAlfaa = () => {
                 <GrProjects />
               </div>
               <div className="d-flex flex-column ">
-                <h4 className="wa-count">30</h4>
+                <h4 className="wa-count">6</h4>
                 <p>Projects</p>
               </div>
             </div>

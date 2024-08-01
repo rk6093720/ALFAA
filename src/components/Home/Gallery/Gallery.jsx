@@ -3,12 +3,15 @@ import Slider from "react-slick";
 import "./Gallery.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import gallery1 from "../../../assets/g5.jpg";
-import gallery2 from "../../../assets/g2.jpg";
-import gallery3 from "../../../assets/g3.jpg";
-import gallery4 from "../../../assets/g4.jpg";
-import gallery5 from "../../../assets/g1.jpg";
-import gallery6 from "../../../assets/g7.jpg";
+import g1 from "../../../assets/g1.jpg";
+import g2 from "../../../assets/g2.jpg";
+import g3 from "../../../assets/g3.jpg";
+import g4 from "../../../assets/g4.jpg";
+import g15 from "../../../assets/g15.jpg";
+// import g6 from "../../../assets/g6.jpg";
+import g7 from "../../../assets/g7.jpg";
+// import g8 from "../../../assets/g8.jpg";
+// import g9 from "../../../assets/g9.jpg";
 
 
 // Custom Arrow Components
@@ -36,11 +39,15 @@ const PrevArrow = (props) => {
 
 const Gallery = () => {
   const galleryImages = [
-    { src: gallery1 },
-    { src: gallery2 },
-    { src: gallery3 },
-    { src: gallery5 },
-    { src: gallery6 },
+    { src: g1 },
+    { src: g2 },
+    { src: g3 },
+    { src: g4 },
+    { src: g15 },
+    // { src: g6 },
+    { src: g7 },
+    // { src: g8 },
+    // { src: g9},
   ];
 
   const settings = {

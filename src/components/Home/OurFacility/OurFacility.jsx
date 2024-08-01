@@ -10,14 +10,13 @@ const OurFacility = () => {
           <div>
             <h5>Day Care</h5>
             <p className="as_text">
-              The proposed day care residential campus would be developed on
-              2.25 acres of land in the natural surrounding of north Bangalore,
-              55 kilometers from Bangalore International airport near
-              Chikkabatlapur (Giriapalli village near Mittemari). The
-              neighboring villages would serve as pool of employable care givers
-              and ancillary helper for the ALFAA campus. Thus we are committed
-              to creating job opportunities for the rural people Living in
-              nearby surrounding villages.
+              Offering top-tier residential accommodations, our focus lies in engaging adults
+              with Autism and Intellectual/ Multiple Disabilities through a diverse range of skill-enhancing endeavours.
+              These encompass vocational training, nurturing personality growth, and honing independent living capabilities.
+              In addition, we actively conduct awareness initiatives designed to educate the wider community about autism,
+              fostering an environment of understanding and inclusion for individuals with autism and their families.
+              Alfaa also provides respite and counselling for parents of children with autism and intellectual/ multiple disabilities.
+              Alfaa also nurtures skill-building and awareness among students by providing internship opportunities to students from different educational institutions.
             </p>
           </div>
           <div>
