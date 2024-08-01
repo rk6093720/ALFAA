@@ -6,10 +6,11 @@ import ks from "../assets/2e.jpg";
 import ds from "../assets/3e.jpg";
 import usa from "../assets/Usha_Kini.jpeg";
 import mg from "../assets/mg.jpeg";
+import np1 from "../assets/np/1np.png";
 const Trusty = ({ subHead, mainHead }) => {
   const members = [
     {
-      src: "https://html.hixstudio.net/poorex-prev/assets/img/team/team-1-1.jpg",
+      src: np1,
       name: "Mr. Col. PK Singh",
       role: "Board of directors",
     },
