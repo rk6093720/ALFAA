@@ -10,13 +10,26 @@
 }
 .about_poorex_left {
   flex: 1;
- 
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Added transition for background-color */
 }
+.about_section_title .second_title{
+  color: var(--main-color);
+}
+.about_section_title:hover .second_title{
+  color: #fe7f4c;
+}
+  .about_section_title .as_title:nth-of-type(2) {
+    color: red;
+    display: inline-block;
+    margin: 0 0 0 8px;
+}
+
+
 .about_poorex_right {
   flex: 1;
   align-items: flex-end;
-  position: relative;
 }
+
 .as_subtitle {
   font-size: 14px;
   color: var(--tp-common-orange);
@@ -50,15 +63,16 @@
 }
 .as_title {
   font-size: 42px;
-  color: var(--main-color);
+  color:  var(--main-color);
   font-weight: 700;
   font-family: var(--tp-ff-heading);
   line-height: 1.2;
   margin-bottom: 1rem;
 }
+
 .as_text,
 .as_list-content p {
-  color: #000;
+  color: white;
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
@@ -315,5 +329,6 @@
     font-size: 14px;
     line-height: 1.6;
     word-wrap: break-word;
+    color: white;
   }
 }

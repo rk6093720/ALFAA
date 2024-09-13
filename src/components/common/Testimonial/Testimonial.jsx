@@ -36,7 +36,7 @@ const testimonialsData = [
 const TestimonialItem = memo(({ index, activeSlide, testimonial }) => {
   const { author, name, title, text } = testimonial;
   return (
-    <div className={`testi-item ${index === activeSlide ? "active-item" : ""}`}>
+    <div className={`testi-item ${index === activeSlide ? "active-item" : ""}`} key={index} >
       <div className="test-item-header">
         <img src={author} alt={name} />
       </div>
@@ -111,11 +111,11 @@ const Testimonial = () => {
     <div className="testi_container-area">
       <div className="testi_container">
         <div className="row g-3 d-flex flex-wrap align-items-center">
-          <div className="col-xl-3 col-lg-6 col-md-6">
+          <div className="col-xl-3 col-lg-6 col-md-6" >
             <div className="testi_container-left-side">
-              <div>
-                <span className="as_subtitle">OUR TESTIMONIALS</span>
-                <h4 className="as_title">What Our Trustees Tell About Us</h4>
+              <div >
+                <span className="as_subtitle" style={{color:"rgb(254, 127, 76)"}}>OUR TESTIMONIALS</span>
+                <h4 className="as_title" style={{color:"var(--main-color)"}}>What Our Trustees Tell About Us</h4>
               </div>
               <div className="as_text mt-4">
                 <p>
@@ -126,10 +126,10 @@ const Testimonial = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl-8 col-lg-6 col-md-6">
-            <Slider {...settings}>
+          <div className="col-xl-8 col-lg-6 col-md-6" >
+            <Slider {...settings} >
               {testimonialsData.map((testimonial, index) => (
-                <TestimonialItem
+                <TestimonialItem className="testimonial"
                   key={index}
                   index={index}
                   activeSlide={activeSlide}

@@ -16,8 +16,8 @@ const Footer = () => {
           <div className="footer_text_wrapper ">
             <div className="d-flex flex-column animated tpfadeUp logo-address">
             <div>
-  <h4><b>ALFAA Pilot Project</b></h4>
-</div>
+              <h4><b>ALFAA Pilot Project</b></h4>
+            </div>
 
               <div className="d-flex flex-row gap-2">
                 <span>
@@ -92,13 +92,13 @@ const Footer = () => {
             <div className="navigation-links animated tpfadeUp ">
               <h4><b>Navigation</b></h4>
               <ul>
-                <li className="nav-item ">
+                <li className="nav-item">
                   <Link className="nav-link" to="/aboutus">
                     About Us
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/donations">
+                  <Link className="nav-link" to="/donatenow">
                     Donations
                   </Link>
                 </li>
@@ -112,7 +112,7 @@ const Footer = () => {
                     Blog
                   </Link>
                 </li>
-                <li className="nav-item ">
+                <li className="nav-item">
                   <Link className="nav-link" to="/contactus">
                     Contact Us
                   </Link>

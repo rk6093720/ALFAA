@@ -9,11 +9,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+
 }
 
 .navbar-container .navbar-brand .logo {
   height: 74px;
-  width: 74px;
+  width:  74px;
 }
 
 .navbar-container .navbar-toggler {
@@ -38,11 +40,17 @@
 .navbar-container .navbar-nav {
   display: flex;
   align-items: center;
+  white-space: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .navbar-container .nav-item {
   margin: 0 10px;
   position: relative;
+  white-space: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .navbar-container .nav-link {
@@ -50,6 +58,7 @@
   color: #333;
   text-decoration: none;
   transition: color 0.3s;
+  width: 100%;
 }
 
 .navbar-container .nav-link:hover {
@@ -90,7 +99,7 @@
   /* height: 58px;
   line-height: 55px;
   padding: 0 51px; */
-  padding: 10px 15px;
+  padding: 10px 20px;
   font-size: 14px;
   font-weight: 700;
   text-align: center;

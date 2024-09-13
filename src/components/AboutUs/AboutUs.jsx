@@ -149,7 +149,7 @@ const AboutUs = ({ subHead, mainHead }) => {
         </ul>
       </div>
       <AboutTimeline />
-      <BrandSlider />
+      {/* <BrandSlider /> */}
       <StartDonate />
       <Testimonial />
       <div className="my-5">

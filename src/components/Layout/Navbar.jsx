@@ -41,13 +41,13 @@ const Navbar = () => {
           >
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
-                <Link className="nav-link" to="/home" onClick={handleClose}>
+                <Link className="nav-link" to="/home" onClick={handleClose} >
                   <b>Home</b>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/aboutus" onClick={handleClose}>
-                  <b>About Us</b>
+                  <b>AboutUs</b>
                 </Link>
               </li>
               <li className="nav-item">
@@ -82,7 +82,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/contactus" onClick={handleClose}>
-                  <b>Contact Us</b>
+                  <b>ContactUs</b>
                 </Link>
               </li>
               <li className="nav-item">
@@ -104,9 +104,9 @@ const Navbar = () => {
                   style={{ color: "#FFF", fontSize: "30px" }}
                 />
               </div>
-              <div className="d-flex flex-column">
-                <div>
-                  <span>Call Us Anytime</span>
+              <div className=" w-100 d-flex flex-column justify-content-center align-items-center">
+                <div className="w-100">
+                  <span>CallUsAnytime</span>
                 </div>
                 <div>
                   <span>+91 9741418103</span>

@@ -7,10 +7,21 @@
     padding-top: 115px;
     padding-bottom: 115px;
   }
+  .testimonial:hover{
+    background-color: rgb(254, 127, 76);
+    transition: transform 0.3s ease-in-out;
+    max-width: 100%;
+  }
   .testi-item{
     position: relative;
     margin-top: 40px;
+    
   }
+  .testi-item:hover{
+    background-color: rgb(254, 127, 76);
+    transition: transform 0.3s ease-in-out;
+    max-width: 100%;
+    }
   .test-item-content{
     position: relative;
     padding: 20px;
@@ -19,7 +30,28 @@
   .test-item-content.active{
     background-color: var(--main-color); 
   }
-  
+  /* Base styling for the testimonial item */
+.testi-item {
+  transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition */
+  padding: 16px; /* Adjust padding as needed */
+  border-radius: 8px; /* Rounded corners */
+  /* Background color */
+}
+
+/* Hover effect */
+.testi-item:hover {
+  transform: scale(1.05); /* Zoom in effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  background-color: rgb(254, 127, 76);
+}
+
+/* Active item styling */
+.active-item {
+  background-color: rgba(36, 14, 55, 0.078);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow for active item */
+}
+
+
   .test-item-content::after{
     content: "";
     position: absolute;
@@ -61,6 +93,9 @@
     height: 60px; 
     z-index:1000;
     
+  }
+  .test-item-header:hover{
+    background-color: rgb(254, 127, 76);
   }
   
   .test-item-header img {

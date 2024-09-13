@@ -26,17 +26,17 @@ const ProvidingUrgent = () => {
             <div className="animated tpfadeRight providing-item-area">
               <div className="providing-item-box">
                 <div className="providing-content d-flex flex-column gap-3">
-                  <h4 className="as_title">
+                  <h4 className="as_title" style={{color:"var(--main-color)"}}>
                   What is Autism?
                   </h4>
-                  <p className="as_text">
+                  <p className="as_text" style={{color:"var(--main-color)"}}>
                     Autism is one of five pervasive neurological developmental
                     disorders (PDD), characterized by severe and pervasive
                     impairment in several areas of development. Autism is a
                     spectrum disorder that affects individuals differently and
                     to varying degrees.
                   </p>
-                  <p className="as_text">
+                  <p className="as_text" style={{color:"var(--main-color)"}}>
                     It is a complex developmental disability that appears
                     typically during the first three years of life and affects a
                     person’s ability to communicate and interact with others.
@@ -44,7 +44,7 @@ const ProvidingUrgent = () => {
                     show difficulties in verbal and non-verbal communication,
                     social interactions, and leisure or play activities.
                   </p>
-                  <p className="as_text">
+                  <p className="as_text" style={{color:"var(--main-color)"}}>
                     There is no known single cause for autism, although it is
                     generally accepted that it is caused by abnormalities in
                     brain structure or function. According to some studies,

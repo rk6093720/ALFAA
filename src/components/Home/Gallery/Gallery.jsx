@@ -80,6 +80,7 @@ const Gallery = () => {
       },
     ],
   };
+  console.log(galleryImages)
   return (
     <div className="gallery my-5">
       <Slider {...settings}>

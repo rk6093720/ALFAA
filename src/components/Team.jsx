@@ -85,7 +85,7 @@ const Team = ({ subHead, mainHead }) => {
     {
       src:np2,
       name: "Mr. Manjunath.H",
-      role: "ADMINCORDINATURE",
+      role: "ADMIN CORDINATURE",
     },
     {
       src: np3,
