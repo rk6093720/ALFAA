@@ -1,0 +1,75 @@
+/* Our Facility Section */
+.our-facility {
+  padding: 50px 0;
+  background-color: var(--main-color);
+  color: white;
+}
+
+.our-facility-area {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.as_subtitle {
+  display: block;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+ 
+}
+
+.as_title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+
+.facility-content {
+  margin-top: 40px;
+}
+
+.facility-content h5 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--main-color);
+}
+
+.as_text {
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .as_title {
+    font-size: 28px;
+  }
+
+  .facility-content h5 {
+    font-size: 20px;
+  }
+
+  .as_text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .as_title {
+    font-size: 24px;
+  }
+
+  .facility-content h5 {
+    font-size: 18px;
+  }
+
+  .as_text {
+    font-size: 14px;
+  }
+}
