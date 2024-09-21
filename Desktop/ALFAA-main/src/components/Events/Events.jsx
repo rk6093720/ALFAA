@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect } from "react";
 import HeroSection from "../common/HeroSection";
 import EventCard from "../common/EventCards/EventCards";
@@ -16,15 +17,13 @@ import blog12 from "../../assets/blog-image12.png";
 import hl from "../../assets/hl.jpg";
 import ad from "../../assets/ad.jpg";
 import rp from "../../assets/26jan.jpeg";
-
 import wd from "../../assets/wispad.jpg";
 
 const Event = () => {
-
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-  
+    window.scrollTo(0, 0);
+  }, []);
+
   const eventCards = [
     {
       imgSrc: hl,
@@ -42,7 +41,7 @@ const Event = () => {
     },
     {
       imgSrc: rp,
-      header: "Republic Day celebration at campus site",
+      header: "Republic Day Celebration at Campus Site",
       link: "#",
       date: "26",
       month: "January",
@@ -56,7 +55,7 @@ const Event = () => {
     },
     {
       imgSrc: blog4,
-      header: "World Autism Awareness day",
+      header: "World Autism Awareness Day",
       link: "#",
       date: "02",
       month: "April",
@@ -117,20 +116,57 @@ const Event = () => {
       date: "23",
       month: "June",
     },
+    {
+      imgSrc: blog1, // Replace with an actual image for Diwali
+      header: "Diwali Celebration",
+      link: "#",
+      date: "24",
+      month: "October",
+    },
   ];
 
-  const sortedEventCards = eventCards.sort((a, b) => {
-    const monthOrder = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    const dateA = new Date(`2023 ${a.month} ${a.date}`);
-    const dateB = new Date(`2023 ${b.month} ${b.date}`);
+  const currentDate = new Date();
 
+  const upcomingEvents = eventCards.filter((event) => {
+    const eventDate = new Date(`2024 ${event.month} ${event.date}`);
+    return eventDate > currentDate;
+  });
+
+  const completedEvents = eventCards.filter((event) => {
+    const eventDate = new Date(`2024 ${event.month} ${event.date}`);
+    return eventDate <= currentDate;
+  });
+
+  // Sort the upcoming and completed events
+  const sortedUpcomingEvents = upcomingEvents.sort((a, b) => {
+    const dateA = new Date(`2024 ${a.month} ${a.date}`);
+    const dateB = new Date(`2024 ${b.month} ${b.date}`);
+    return dateA - dateB;
+  });
+
+  const sortedCompletedEvents = completedEvents.sort((a, b) => {
+    const dateA = new Date(`2024 ${a.month} ${a.date}`);
+    const dateB = new Date(`2024 ${b.month} ${b.date}`);
     return dateA - dateB;
   });
 
   return (
     <>
       <HeroSection subHead="Home / Event" mainHead="Events" />
-      <EventCard eventCards={sortedEventCards} />
+
+      <h2>Upcoming Events</h2>
+      {sortedUpcomingEvents.length > 0 ? (
+        <EventCard eventCards={sortedUpcomingEvents} />
+      ) : (
+        <p>There are no upcoming events.</p>
+      )}
+
+      <h2>Completed Events</h2>
+      {sortedCompletedEvents.length > 0 ? (
+        <EventCard eventCards={sortedCompletedEvents} />
+      ) : (
+        <p>There are no completed events.</p>
+      )}
     </>
   );
 };

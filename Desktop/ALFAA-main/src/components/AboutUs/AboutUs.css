@@ -1,40 +1,48 @@
-.our-poorex-container-area{
-    padding-top: 7%;
-    padding-bottom: 4%;
-}
-/* HomePage.css */
+/* General Container Styles */
 .homepage-container {
     width: 100%;
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+
+/* Section layout */
 section {
     margin: 0 auto;
     padding: 20px;
     max-width: 1200px; /* Adjust as per your layout needs */
 }
 
-  .our-poorex-container {
+/* Our Poorex Container */
+.our-poorex-container {
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
 }
+
 .our-poorex-container2 {
     display: flex;
     align-items: center;
     flex-direction: row;
-    gap:5rem;
+    gap: 5rem;
 }
+
+.our-poorex-container-area {
+    padding-top: 7%;
+    padding-bottom: 4%;
+}
+
 .sub-img {
     position: absolute;
     right: -77px;
     bottom: -85px;
 }
-.as_text > p{
-    color:var(--main-color)
-    color:var(--tp-common-orange)
+
+.as_text > p {
+    color: var(--main-color);
+    color: var(--tp-common-orange);
 }
+
 .op-border {
     position: absolute;
     top: 60px;
@@ -45,6 +53,7 @@ section {
     z-index: -1;
 }
 
+/* Typography */
 .ap_subtitle {
     font-size: 14px;
     color: var(--tp-common-orange);
@@ -65,59 +74,144 @@ section {
     transform: translateY(-5px);
     margin-right: 10px;
 }
-.call-us{
+
+.call-us {
     display: block;
     font-size: 16px;
     margin-bottom: 7px;
+}
 
+.left-side:hover {
+    background-color: var(--main-color);
 }
-.left-side:hover{
-    backgroundColor:var(--main-color)
-}
-.telephone{
+
+.telephone {
     display: block;
     font-weight: 800;
     font-size: 20px;
     color: var(--tp-theme-1);
 }
-.telephone a{
+
+.telephone a {
     color: inherit;
 }
-.abouimg1, .abouimg2{
+
+/* Image Styles */
+.abouimg1, .abouimg2 {
     width: 500px;
     float: center;
-    color:orange; 
+    color: orange;
 }
-.alfaa-desire{
+
+/* Alfaa Desire Section */
+.alfaa-desire {
     padding-top: 3rem;
     padding-bottom: 3rem;
     padding-left: 10%;
     margin-bottom: 5%;
-    background-color: rgba(30, 14, 55,0.91);
+    background-color: rgba(30, 14, 55, 0.91);
 }
 
-.alfaa-desire ul li{
+.alfaa-desire ul li {
     font-size: 16px;
     margin-bottom: 1rem;
 }
+
+/* Brand Area */
+.brand-area-container {
+    padding: 60px 20px 70px;
+    border-top: 1px solid #00000024;
+}
+
+.brand-area img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Timeline Animation */
+.timeline-item {
+    opacity: 0;
+    animation-fill-mode: forwards; /* Ensures animation stays in the final state */
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+    /* Adjust typography for tablets */
+    .ap_subtitle {
+        font-size: 12px;
+    }
+    
+    .telephone {
+        font-size: 18px;
+    }
+    
+    .our-poorex-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .our-poorex-container2 {
+        gap: 3rem;
+    }
+    
+    .abouimg1, .abouimg2 {
+        width: 400px;
+        background-color:--main-color;
+    }
+
+    .sub-img {
+        right: -50px;
+        bottom: -50px;
+    }
+
+    .op-border {
+        height: 300px;
+        width: 250px;
+        top: 50px;
+        right: -30px;
+    }
+}
+
+/* Mobile (max-width: 767px) */
 @media (max-width: 767px) {
     .our-poorex-container {
         flex-direction: column-reverse;
         align-items: center;
         gap: 2rem;
     }
+    
     .our-poorex-container2 {
-        display: flex;
-        align-items: center;
         flex-direction: column;
-        gap:2rem;
+        gap: 2rem;
     }
-
+    
     .left-side,
     .right-side {
         width: 100%;
-        padding-left: 0%;
-        padding-right: 0%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .sub-img {
+        position: static;
+        margin-top: 2rem;
+        right: 0;
+        bottom: 0;
     }
 
     .op-border {
@@ -127,38 +221,125 @@ section {
         border: none;
     }
 
-    .sub-img {
-        position: static;
-        margin-top: 2rem;
-        right: 0;
-        bottom: 0;
-    }
-    .abouimg1, .abouimg2{
+    .abouimg1, .abouimg2 {
         width: 340px;
-        float: center;
+    
+    }
+    .aboutimg1:hover{
+        background-color:var(--main-color);
+    }
+    
+    .ap_subtitle {
+        font-size: 10px;
+    }
+    
+    .telephone {
+        font-size: 16px;
+    }
+
+    .alfaa-desire ul li {
+        font-size: 14px;
     }
 }
-.brand-area-container{
-    padding: 60px 20px 70px;
-    border-top: 1px solid #00000024;
+/* AboutUs.css */
+
+.about-timeline-container {
+  padding: 5% 10%;
 }
-.brand-area img {
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
-  }
-  @keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
+
+/* Title Styling */
+.as_title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #361455;
+}
+
+@media (max-width: 1200px) {
+  .as_title {
+    font-size: 1.6rem;
   }
 }
 
+@media (max-width: 768px) {
+  .as_title {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .as_title {
+    font-size: 1.2rem;
+  }
+}
+
+/* Timeline Item Adjustments */
 .timeline-item {
   opacity: 0;
   animation-fill-mode: forwards; /* Ensures animation stays in the final state */
+  transition: transform 0.3s ease-in-out;
 }
+
+.timeline-item:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+  z-index: 1;
+}
+
+/* Timeline Opposite Content - Adjust font-size for mobile devices */
+.MuiTimelineOppositeContent-root {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #361455;
+}
+
+@media (max-width: 1024px) {
+  .MuiTimelineOppositeContent-root {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .MuiTimelineOppositeContent-root {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .MuiTimelineOppositeContent-root {
+    font-size: 0.9rem;
+  }
+}
+
+/* Timeline Dot Styling */
+.MuiTimelineDot-outlined {
+  transition: transform 0.3s ease-in-out;
+}
+
+.MuiTimelineDot-outlined:hover {
+  transform: scale(1.2);
+  background-color: var(--tp-common-orange);
+  color: #fff;
+}
+
+/* Adjust padding for different screen sizes */
+.about-timeline-container {
+  padding: 6px 100px;
+}
+
+@media (max-width: 1024px) {
+  .about-timeline-container {
+    padding: 6px 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-timeline-container {
+    padding: 6px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-timeline-container {
+    padding: 6px 10px;
+  }
+}
+

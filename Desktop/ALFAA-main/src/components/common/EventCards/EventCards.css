@@ -2,16 +2,22 @@
 
 .event-area {
   padding: 20px;
+
 }
 
 .event-item {
   margin-bottom: 30px;
 }
-
+.event-item:hover{
+  background-color:var(--main-color);
+}
 .card {
   height: 100%;
   display: flex;
   flex-direction: column;
+  border: 1px solid #ddd; /* Optional: border for better visibility */
+  border-radius: 8px; /* Optional: rounded corners */
+  overflow: hidden; /* Ensures no overflow of content */
 }
 
 .event-item_thumb {
@@ -40,6 +46,7 @@
 .number-overlay h4 {
   margin: 0;
   font-size: 1.5em;
+  color: #fff; /* Text color for better visibility */
 }
 
 .card-body {
@@ -47,6 +54,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 15px; /* Added padding for content */
 }
 
 .time-location-icon {
@@ -58,6 +66,7 @@
 .card-title-h5 {
   font-size: 1.25em;
   margin: 0;
+  font-weight: bold; /* Optional: bold title for emphasis */
 }
 
 .read-more {
@@ -70,15 +79,29 @@
 }
 
 /* Responsive adjustments */
+@media (max-width: 1024px) {
+  .event-item_thumb {
+    height: 300px; /* Adjust height for tablets */
+  }
+}
+
 @media (max-width: 768px) {
   .event-item_thumb {
-    height: 150px; /* Adjust height for smaller screens */
+    height: 200px; /* Adjust height for smaller screens */
+  }
+
+  .card-title-h5 {
+    font-size: 1.15em; /* Slightly smaller title on tablets */
+  }
+
+  .number-overlay h4 {
+    font-size: 1.2em; /* Adjust overlay text size */
   }
 }
 
 @media (max-width: 576px) {
   .event-item_thumb {
-    height: 120px; /* Further adjust height for extra small screens */
+    height: 150px; /* Further adjust height for extra small screens */
   }
 
   .time-location-icon {
@@ -86,6 +109,14 @@
   }
 
   .card-title-h5 {
-    font-size: 1em;
+    font-size: 1em; /* Further reduce title size */
+  }
+
+  .number-overlay h4 {
+    font-size: 1em; /* Further reduce overlay text size */
+  }
+
+  .read-more {
+    font-size: 0.8em; /* Smaller font for read more */
   }
 }

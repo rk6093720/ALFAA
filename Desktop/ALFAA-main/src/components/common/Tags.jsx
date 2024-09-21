@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import "./common.css";
 import { FaRegComments } from "react-icons/fa6";

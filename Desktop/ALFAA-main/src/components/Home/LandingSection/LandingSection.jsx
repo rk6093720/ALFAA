@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import "./LandingSection.css";
 
@@ -6,6 +7,7 @@ import { Link } from "react-router-dom";
 import { FaBookAtlas} from "react-icons/fa6";
 import { FaCircleDollarToSlot } from "react-icons/fa6";
 import { FaHandsHoldingChild } from "react-icons/fa6";
+// eslint-disable-next-line no-unused-vars
 import { Grid } from "@mui/material";
 
 
@@ -14,6 +16,11 @@ const LandingSection = () => {
   return (
     < div >
       <div className="hero_section">
+        <div className="image image1"></div>
+      <div className="image image2"></div>
+      <div className="image image3"></div>
+      <div className="image image4"></div>
+      <div className="image image5"></div>
         <div className="container">
           <div className="hero_section_content ">
               

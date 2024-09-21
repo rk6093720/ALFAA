@@ -24,8 +24,7 @@ const eventCards = [
       },
       {
         imgSrc:img2,
-  
-        header: "Independence Day",
+         header: "Independence Day",
         link: "#",
         date: "15",
         month: "Aug",

@@ -1,4 +1,3 @@
-
 import { TextField, Button, Grid, Box, Typography, IconButton, Container } from '@mui/material';
 import { PhoneOutlined as PhoneIcon, Email as EmailIcon, LocationOn as LocationIcon } from '@mui/icons-material';
 import emailjs from 'emailjs-com';
@@ -10,11 +9,9 @@ const contactDetails = [
   { icon: LocationIcon, lines: ["3B, CASSIA COURT 91/1", "COLES ROAD, BANGALORE"], hrefPrefix: "" }
 ];
 
-// Define ContactForm component
 const ContactForm = () => {
-  const form = useRef(); // Ref for accessing form elements
+  const form = useRef();
 
-  // State variables for managing validation errors
   const [errors, setErrors] = useState({
     yourName: '',
     yourEmail: '',
@@ -23,7 +20,6 @@ const ContactForm = () => {
     message: ''
   });
 
-  // Validation function
   const validateForm = () => {
     let valid = true;
     const newErrors = {
@@ -49,7 +45,7 @@ const ContactForm = () => {
     if (!form.current.phone.value.trim()) {
       newErrors.phone = 'Phone is required';
       valid = false;
-    } else if (!/^[6789]\d{9}$/.test(form.current.phone.value)) { // This regex checks for a 10-digit phone number starting with 6, 7, 8, or 9
+    } else if (!/^[6789]\d{9}$/.test(form.current.phone.value)) {
       newErrors.phone = 'Phone is invalid';
       valid = false;
     }
@@ -63,19 +59,19 @@ const ContactForm = () => {
       valid = false;
     }
 
-    setErrors(newErrors); // Update errors state
+    setErrors(newErrors);
     return valid;
   };
 
-  // Handle form submission
   const sendEmail = (e) => {
     e.preventDefault();
 
     if (validateForm()) {
       emailjs.sendForm('service_ibpy7ve', 'template_w2na4rj', e.target, 'mIu77IZvu1ZMpfJ7X')
+        // eslint-disable-next-line no-unused-vars
         .then((result) => {
           alert('Message Sent Successfully');
-          form.current.reset(); 
+          form.current.reset();
         })
         .catch((error) => {
           console.error('Error sending message:', error);
@@ -84,11 +80,9 @@ const ContactForm = () => {
     }
   };
 
-  // JSX structure for rendering the component
   return (
-    <Container subHead="Home / Contactus" mainHead="Contactus">
+    <Container subHead="Home / Contact Us" mainHead="Contact Us">
       <Grid container spacing={2} sx={{ padding: { xs: '1rem', md: '2rem' } }}>
-        {/* Left side content */}
         <Grid item xs={12} md={6}>
           <Box sx={{ padding: 2 }}>
             <Typography variant="h6" gutterBottom sx={{ color: '#FE7F4C', fontWeight: 700 }}>
@@ -98,12 +92,11 @@ const ContactForm = () => {
               Just have a quick <br /> any question?
             </Typography>
             <Typography variant="body1" gutterBottom sx={{ fontFamily: 'Poppins, sans-serif', fontWeight: 500, color: '#6e7a7a' }}>
-              Charity is the act of extending love and kindness to others <br /> unconditionally which is a conscious act but the decision is <br /> made by the heart, without expecting
+              Charity is the act of extending love and kindness to others <br /> unconditionally.
             </Typography>
           </Box>
         </Grid>
 
-        {/* Right side form */}
         <Grid item xs={12} md={6}>
           <Box
             component="form"
@@ -118,7 +111,6 @@ const ContactForm = () => {
             }}
           >
             <Grid container spacing={2}>
-              {/* Form fields */}
               {[
                 { label: 'Your Name', id: 'yourName' },
                 { label: 'Your Email', id: 'yourEmail' },
@@ -139,7 +131,6 @@ const ContactForm = () => {
                   />
                 </Grid>
               ))}
-              {/* Message textarea */}
               <Grid item xs={12}>
                 <TextField
                   fullWidth
@@ -155,7 +146,6 @@ const ContactForm = () => {
                   sx={{ bgcolor: 'white' }}
                 />
               </Grid>
-              {/* Submit button */}
               <Grid item xs={12}>
                 <Button
                   type="submit"
@@ -179,7 +169,6 @@ const ContactForm = () => {
           </Box>
         </Grid>
 
-        {/* Contact details */}
         <Grid item xs={12} sx={{ marginTop: '2rem' }}>
           <Box sx={{ padding: { xs: '2rem', md: '4rem' }, bgcolor: '#047470' }}>
             <Grid container justifyContent="center" spacing={5}>
@@ -208,12 +197,18 @@ const ContactForm = () => {
           </Box>
         </Grid>
 
-
         <Grid item xs={12} sx={{ marginTop: { xs: '1rem', md: '-1rem' }, textAlign: 'center' }}>
           <Box sx={{ overflow: 'hidden', height: { xs: '300px', md: '400px' }, position: 'relative' }}>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31100.904245686746!2d77.5724740743164!3d12.996584499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16f67de17f21%3A0xbdb33d28abb75db9!2sAssisted%20Living%20For%20Autistic%20Adults!5e0!3m2!1sen!2sin!4v1722150550598!5m2!1sen!2sin"
-            
-            width="100%" height="100%" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy='no-referrer-when-downgrade' title="Poorex Location"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31100.904245686746!2d77.5724740743164!3d12.996584499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16f67de17f21%3A0xbdb33d28abb75db9!2sAssisted%20Living%20For%20Autistic%20Adults!5e0!3m2!1sen!2sin!4v1722150550598!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy='no-referrer-when-downgrade'
+              title="Location"
+            ></iframe>
           </Box>
         </Grid>
       </Grid>

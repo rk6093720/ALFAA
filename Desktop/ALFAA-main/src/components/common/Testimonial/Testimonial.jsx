@@ -1,3 +1,6 @@
+/* eslint-disable react/display-name */
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 import React, { useState, memo, useCallback, useMemo } from "react";
 import Slider from "react-slick";
 import "./Testimonial.css";

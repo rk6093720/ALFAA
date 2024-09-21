@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import "./OurBlog.css";
 import { FaArrowRightLong } from "react-icons/fa6";

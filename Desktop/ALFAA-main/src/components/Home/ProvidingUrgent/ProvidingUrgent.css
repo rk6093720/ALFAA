@@ -4,59 +4,82 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 115px 100px 115px 0px;
+  padding: 115px 100px;
+  background-size: cover; /* Ensure background image covers area */
+  background-position: center; /* Center the background image */
 }
 
 .providing-bg {
-  /* background-image: url("../../../assets/provide-bg-1.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; */
   flex: 1;
   margin-left: 3%;
 }
+
 .providing-wrapper {
   position: relative;
   flex: 1;
   margin-top: 5%;
   color: var(--main-color);
 }
-/* .providing-item-area {
-  margin-left: 2rem;
-} */
+
 .providing-item-box {
   padding-left: 10px;
-  
 }
+
 .nav-tabs .nav-link {
   border: 0;
 }
+
 .make-diff {
   margin-left: 2rem;
 }
+
+/* Responsive Adjustments */
 @media (max-width: 1024px) {
-    .providing-area-space {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 10px;
-        gap:2rem;
-      }
+  .providing-area-space {
+    flex-direction: column; /* Stack items */
+    align-items: center; /* Center items */
+    padding: 40px 20px; /* Adjust padding */
+    gap: 2rem; /* Space between elements */
+  }
+
+  .providing-bg {
+    margin-left: 0; /* Center on smaller screens */
+    margin-bottom: 1rem; /* Space below providing-bg */
+  }
+
+  .providing-wrapper {
+    text-align: center; /* Center text */
+  }
 }
+
 @media (max-width: 767px) {
   .providing-area-space {
-    display: flex;
-    flex-direction: column;
-    padding: 20px 10px;
+    padding: 20px 10px; /* Reduce padding for mobile */
   }
-  .providing-bg img{
-    width:350px;
+
+  .providing-bg img {
+    width: 100%; /* Make image responsive */
+    max-width: 350px; /* Limit maximum size */
+    height: auto; /* Maintain aspect ratio */
   }
+
   .providing-item-area {
-    margin-left: 0rem;
+    margin-left: 0; /* Remove left margin for smaller screens */
     color: var(--main-color);
+    text-align: center; /* Center content */
   }
+
   .make-diff {
-    margin-left: 10px;
+    margin-left: 0; /* Remove left margin */
+  }
+}
+
+@media (max-width: 480px) {
+  .providing-area-space {
+    padding: 15px 5px; /* Further reduce padding for very small screens */
+  }
+
+  .providing-wrapper {
+    margin-top: 2%; /* Reduce top margin for compactness */
   }
 }

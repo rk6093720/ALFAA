@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useEffect } from "react";
 import HeroSection from "../common/HeroSection";
 import event1 from "../../assets/event-details-1-3.jpg";
@@ -5,8 +6,10 @@ import "../Donation/Donation.css";
 import { Link } from "react-router-dom";
 import { TiTick } from "react-icons/ti";
 import PostComment from "../common/PostComment";
+// eslint-disable-next-line no-unused-vars
 import Healthy from "../common/Healthy";
 import OurLatestPost from "../common/OurLatestPost";
+// eslint-disable-next-line no-unused-vars
 import Tags from "../common/Tags";
 import { PiQuotesBold } from "react-icons/pi";
 import { GoArrowRight } from "react-icons/go";
@@ -168,15 +171,15 @@ const BlogDetails = () => {
               <div className="event-details-right-box">
                 <div className="ed-search">
                   <div className="ed-search-content">
-                    <form class="form-inline ">
+                    <form className="form-inline ">
                       <div className="search-input">
                         <input
-                          class="form-control "
+                          className="form-control "
                           type="search"
                           placeholder="Search"
                           aria-label="Search"
                         />
-                        <button class="btn btn-outline-success " type="submit">
+                        <button className="btn btn-outline-success " type="submit">
                         <CiSearch size={20}/>
                         </button>
                       </div>

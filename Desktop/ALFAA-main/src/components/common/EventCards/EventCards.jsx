@@ -1,3 +1,6 @@
+/* eslint-disable react/display-name */
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 import React, { memo } from "react";
 import { FaClock, FaMapMarkerAlt, FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";

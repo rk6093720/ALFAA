@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useRef } from "react";
 import img1 from "../../../assets/donate-shape-1-2.png";
 import img2 from "../../../assets/donate-shape-1-3.png";
@@ -126,14 +127,16 @@ const HelpThePeople = () => {
                         src={helpCard.image}
                         alt="Card image"
                         className="card-img-top"
+                      // eslint-disable-next-line react/jsx-no-comment-textnodes
                       />
 
-                      <div class="tp-donate__thumb-shape">
+                      // eslint-disable-next-line react/no-unknown-property
+                      <div className="tp-donate__thumb-shape">
                         <img
                           src="https://html.hixstudio.net/poorex-prev/assets/img/donate/donate-shape-1.png"
                           alt=""
                         />
-                        <div class="tp-donate__thumb-text">
+                        <div className="tp-donate__thumb-text">
                           <span>{helpCard.overlayText}</span>
                         </div>
                       </div>

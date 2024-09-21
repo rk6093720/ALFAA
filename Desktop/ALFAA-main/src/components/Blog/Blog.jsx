@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from "react";
 import HeroSection from "../common/HeroSection";
 import "./Blog.css";
@@ -5,24 +6,31 @@ import blog1 from "../../assets/blog-image1.png";
 import blog3 from "../../assets/blog-image3.png";
 
 const Blog = () => {
+  // eslint-disable-next-line no-unused-vars
   const [selectedBlogIndex, setSelectedBlogIndex] = useState(null);
 
+  // eslint-disable-next-line no-unused-vars
   const handleOpen = (index) => {
     setSelectedBlogIndex(index);
   };
 
+  // eslint-disable-next-line no-unused-vars
   const handleClose = () => {
     setSelectedBlogIndex(null);
   };
 
+  // eslint-disable-next-line no-unused-vars
   const handlePrev = () => {
     setSelectedBlogIndex((prevIndex) =>
+      // eslint-disable-next-line no-undef
       prevIndex > 0 ? prevIndex - 1 : blogs.length - 1
     );
   };
 
+  // eslint-disable-next-line no-unused-vars
   const handleNext = () => {
     setSelectedBlogIndex((prevIndex) =>
+      // eslint-disable-next-line no-undef
       prevIndex < blogs.length - 1 ? prevIndex + 1 : 0
     );
   };

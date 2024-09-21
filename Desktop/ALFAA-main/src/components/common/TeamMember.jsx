@@ -11,7 +11,7 @@ const TeamMember = ({ members }) => {
             <div className="team-wrapper">
               <div className="team-item text-center">
                 <div className="team-image">
-                  <img src={member.src} alt={member.name} />
+                  <img  src={member.src} alt={member.name} />
                 </div>
                 <div className="team-content">
                   <h4>{member.name}</h4>

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "./common.css";
 
 const HeroSection = ({mainHead}) => {

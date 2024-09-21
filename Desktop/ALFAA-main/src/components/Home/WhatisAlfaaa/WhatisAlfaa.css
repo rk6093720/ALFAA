@@ -1,11 +1,24 @@
-.whatis-alfaa-container{
+.whatis-alfaa-container {
     padding-left: 5%;
     padding-right: 5%;
 }
-.whatis-alfaa-container h2{
-    color:var(--main-color);
+
+.whatis-alfaa-container h2 {
+    color: var(--main-color);
+    text-align: center; /* Center align the heading */
+    font-size: 2.5em; /* Base font size */
 }
-.wa-icon{
+
+/* Icon Container */
+.whatis-alfaa-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center icons */
+    margin-top: 20px;
+}
+
+/* Icon Styles */
+.wa-icon {
     display: inline-block;
     height: 90px;
     width: 90px;
@@ -13,30 +26,51 @@
     font-size: 50px;
     color: var(--tp-common-white);
     text-align: center;
-    margin-right: 20px;
+    margin: 10px; /* Spacing around icons */
     transition: 0.3s;
     position: relative;
     z-index: 1;
 }
-.wa-count{
+
+/* Count Styles */
+.wa-count {
     font-size: 30px;
     font-weight: 700;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     margin-top: 10px;
-    
+    text-align: center; /* Center the count text */
 }
-@media (max-width: 767px) {
-    /* .wa-count{
-        font-size: 35px;
-    } */
-}
+
+/* Media Queries */
 @media (max-width: 1024px) {
-    .wa-icon{
+    .whatis-alfaa-container h2 {
+        font-size: 2em; /* Adjust font size for tablet */
+    }
+    .wa-icon {
         height: 76px;
         width: 76px;
         font-size: 35px;
-        line-height: 85px;
-        margin-right: 25px;
+        line-height: 76px; /* Adjusted to align vertically */
+        margin: 10px; /* Centered margins */
     }
-    
+    .wa-count {
+        font-size: 25px; /* Adjust count font size for tablet */
+    }
+}
+
+@media (max-width: 767px) {
+    .whatis-alfaa-container h2 {
+        font-size: 1.5em; /* Adjust font size for mobile */
+    }
+    .wa-icon {
+        height: 60px; /* Further reduce size for mobile */
+        width: 60px;
+        font-size: 25px; /* Smaller icon font size */
+        line-height: 60px; /* Align vertically */
+        margin: 5px; /* Reduced margin */
+    }
+
+    .wa-count {
+        font-size: 20px; /* Adjust count font size for mobile */
+    }
 }

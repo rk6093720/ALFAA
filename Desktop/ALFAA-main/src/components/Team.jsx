@@ -35,13 +35,13 @@ const Team = ({ subHead, mainHead }) => {
       role: "Academic Director",
     },
     {
-      src: "https://html.hixstudio.net/poorex-prev/assets/img/team/team-1-1.jpg",
+      src: "https://static.vecteezy.com/system/resources/previews/014/608/856/non_2x/man-avatar-icon-flat-vector.jpg",
       name: "Mr. Surendra Kumar",
       role: "Special Educator",
     },
   
     {
-      src: "https://html.hixstudio.net/poorex-prev/assets/img/team/team-1-1.jpg",
+      src: "https://static.vecteezy.com/system/resources/previews/014/608/856/non_2x/man-avatar-icon-flat-vector.jpg",
       name: "Mr. Ravinder Kumar",
       role: "Special Educator (Incharge AGRP 2)",
     },
@@ -56,22 +56,22 @@ const Team = ({ subHead, mainHead }) => {
       role: "Principal and Sr Special Educator",
     },
     {
-      src: "https://html.hixstudio.net/poorex-prev/assets/img/team/team-1-1.jpg",
+      src: "https://static.vecteezy.com/system/resources/previews/014/608/856/non_2x/man-avatar-icon-flat-vector.jpg",
       name: "Mr. Rajesh Kumar Goswami",
       role: "Special Educator (INCHARGE OF AGRP)",
     },
     {
-      src: "https://html.hixstudio.net/poorex-prev/assets/img/team/team-1-1.jpg",
+      src: "https://static.vecteezy.com/system/resources/previews/014/608/856/non_2x/man-avatar-icon-flat-vector.jpg",
       name: "Mr. Yagvendra Singh",
       role: "Special Educator",
     },
     {
-      src: "https://html.hixstudio.net/poorex-prev/assets/img/team/team-1-1.jpg",
+      src: "https://static.vecteezy.com/system/resources/previews/014/608/856/non_2x/man-avatar-icon-flat-vector.jpg",
       name: " Mr. Stephen A",
       role: "Music Teacher",
     },
     {
-      src: "https://html.hixstudio.net/poorex-prev/assets/img/team/team-1-1.jpg",
+      src: "https://static.vecteezy.com/system/resources/previews/014/608/856/non_2x/man-avatar-icon-flat-vector.jpg",
       name: "Mrs. Piyali Nag",
       role: "Occupational Therapist",
     },
